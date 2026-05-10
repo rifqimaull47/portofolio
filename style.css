@@ -309,7 +309,7 @@ section h2{
 .project-grid{
   margin-top:60px;
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:30px;
 }
 
@@ -320,41 +320,48 @@ section h2{
   border-radius:25px;
   transition:.4s;
   backdrop-filter:blur(15px);
-  box-shadow:
-  0 8px 30px rgba(0,0,0,0.2);
+  box-shadow:0 8px 30px rgba(0,0,0,0.2);
 }
 
 .project-card:hover{
   transform:translateY(-12px) scale(1.02);
   border-color:#22d3ee;
-  box-shadow:
-  0 0 30px rgba(34,211,238,0.25);
+  box-shadow:0 0 30px rgba(34,211,238,0.25);
 }
 
 .project-img{
-  height:200px;
+  width:100%;
+  height:220px;
+  object-fit:cover;
   border-radius:20px;
-  background:linear-gradient(135deg,#22d3ee33,#3b82f633);
-  margin-bottom:25px;
+  margin-bottom:20px;
+  transition:.5s;
+}
+
+.project-card:hover .project-img{
+  transform:scale(1.03);
 }
 
 .project-card h3{
-  font-size:24px;
   margin-bottom:15px;
+  font-size:24px;
 }
 
 .project-card p{
   color:#94a3b8;
   line-height:1.8;
-  margin-bottom:20px;
 }
 
-.project-card button{
-  background:none;
-  border:none;
+.project-stack{
+  margin:18px 0;
   color:#22d3ee;
-  cursor:pointer;
-  font-size:15px;
+  font-size:14px;
+}
+
+.project-btn{
+  color:#22d3ee;
+  text-decoration:none;
+  font-weight:600;
 }
 
 /* SKILLS */
